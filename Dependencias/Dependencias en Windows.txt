@@ -1,0 +1,21 @@
+Paso 1: Dar permisos para ejecutar scripts
+1. Busca "PowerShell" en el menú de inicio de Windows.
+2. Haz clic derecho y selecciona "Ejecutar como administrador".
+3. Pega este comando y presiona Enter:
+   Set-ExecutionPolicy RemoteSigned
+4. Escribe "S" (o "Y") y presiona Enter para confirmar.
+
+Paso 2: Ir a la carpeta del proyecto en PowerShell normal
+Abre un PowerShell normal (no administrador) y navega a tu carpeta:
+cd "C:\Ruta\De\Tu\Carpeta"
+
+Paso 3: Crear el Entorno Virtual
+python -m venv venv
+
+Paso 4: Activar el Entorno Virtual
+.\venv\Scripts\activate
+(Debe aparecer la palabra "(venv)" al inicio de la terminal).
+
+Paso 5: Instalar las librerías de Python
+pip install PyQt5 opencv-python pyzbar face-recognition
+(Nota: Si face-recognition da error en Windows, necesitas descargar e instalar "Visual Studio C++ Build Tools" y "CMake" desde internet).

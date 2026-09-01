@@ -1,0 +1,17 @@
+Activación de entorno Virtual
+
+Cada vez que cierres la terminal o apagues el PC, el entorno virtual se desactiva. Para volver a trabajar o iniciar la app, sigue estos 2 pasos:
+
+Paso 1: Abre la terminal en la carpeta de tu proyecto y activa el entorno:
+- En Linux: source venv/bin/activate
+- En Windows: .\venv\Scripts\activate
+
+Paso 2: Ejecuta el archivo que necesites:
+- Para iniciar la base de datos (SOLO LA PRIMERA VEZ): 
+  python database.py
+  
+- Para abrir el panel del colegio:
+  python administrador.py
+  
+- Para abrir el tótem de los alumnos:
+  python usuario.py

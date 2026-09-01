@@ -1,0 +1,20 @@
+Dependencias De Linux ( Distros Basadas en Debian | Ubuntu/ Linux Mint... entre otras |)
+
+Paso 1: Instalar herramientas del sistema
+Abre la terminal y ejecuta este comando para instalar lo necesario para la cámara, lector QR y compiladores de IA:
+sudo apt update && sudo apt install -y python3-venv python3-dev cmake build-essential libzbar0 python3-pyqt5
+
+Paso 2: Ir a la carpeta del proyecto
+cd "RUTA_DE_TU_CARPETA" 
+(Ejemplo: cd "/home/usuario/Documentos/Sistema/")
+
+Paso 3: Crear el Entorno Virtual (Burbuja aislada)
+python3 -m venv venv
+
+Paso 4: Activar el Entorno Virtual
+source venv/bin/activate
+(Debe aparecer la palabra "(venv)" al inicio de la terminal).
+
+Paso 5: Instalar las librerías de Python
+pip install PyQt5 opencv-python pyzbar face-recognition
+(Nota: face-recognition puede tardar varios minutos en instalarse porque compila código, es normal).
